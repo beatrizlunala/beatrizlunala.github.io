@@ -1,178 +1,123 @@
-/* General Styles */
+@font-face { font-family: Beanstalk; src: url('fonts/Beanstalk.ttf'); } 
+@font-face { font-family: Habbo; src: url('fonts/Habbo.ttf'); } 
+@font-face { font-family: Rockboxcond12; src: url('fonts/Rockboxcond12.ttf'); } 
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #e4ebf1;
-    color: #280a38;
+    cursor:url(resources/cursors/notHovering.png), auto;
+    margin: 40px;
+    font-family: Habbo;
+    background: rgb(20, 36, 36);
+    background: linear-gradient(
+        rgb(20, 36, 36) 0%,
+        rgb(14, 80, 76) 100%
+        );
+    color: lightseagreen;
+    font-size:30px;
+    text-align: center;
 }
-
-.back {
-    padding: 10px;
-    background-color: #280a38;
-}
-.back:hover {
-    color: white;
-}
-
-.hello {
-    padding:10px;
+h1,h2,h3,h4{
+    margin: auto;
+    font-family: Beanstalk;
+    text-align:center;
 }
 
 a {
-    color: #a277fe;
+    color: lightseagreen;
 }
 a:hover {
-    color: #280a38;
-}
-
-.info {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-#about {
-    margin-bottom:0%;
-}
-
-header {
-    background: #280a38;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #a277fe 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header a:hover {
-    color:#a277fe;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.profile-pic {
-    float: left;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.about-text {
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.columns {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    cursor:url(resources/cursors/hovering.png), pointer;
+    color: rgb(40, 223, 40);
 }
 
 .column {
-    flex: 1;
-    margin: 0 10px;
-}
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .project img{
+    width: 70%;
+  }
 
 .project {
-    background: #fff;
+    justify-content: space-around;
+    border: 2px solid lightseagreen;
     padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 0 5px #ccc;
+    margin: 5%;
+    text-align: left;
+    /* max-width: fit-content; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
-.gallery {
+.info {
+    border: none;
+    margin: auto;
+}
+.intro {
+    margin: 50px;
+}
+
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    /* position: fixed; */
+    font-family: Rockboxcond12;
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 2px solid lightseagreen;
+    padding: 5px;
+    /* margin: auto; */
+}
+
+.tab {
+    padding: 10px;
+}
+
+.tab:hover, .tab.active{
+    cursor:url(resources/cursors/hovering.png), pointer;
+    color: rgb(21, 36, 36);
+    background: lightseagreen;
+}
+
+#gallery {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.gallery figure {
+#gallery figure {
     width: 30%;
-    margin: 15px;
+    margin: 10px;
     position: relative;
 }
 
-.gallery img {
+#gallery img {
+    align-content: center;
     width: 100%;
     height: auto;
     display: block;
-    transition: 0.3s ease;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #000;
 }
 
-.gallery figcaption {
+#gallery figcaption {
     text-align: center;
     padding: 5px 0;
 }
 
-.gallery figure:hover img {
-    opacity: 0.7;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-/* Other device stuff */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
-
-    .columns {
-        flex-direction: column;
-    }
-
-    .profile-pic {
-        float: none;
-        display: block;
-        margin: auto;
-    }
-
-    .gallery figure {
-        width: 45%;
-    }
-}
-
-@media (max-width: 365px) {
-    header .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .gallery figure {
-        width: 100%;
-    }
+#gallery figure:hover img {
+    opacity: 0.5;
+    transition: 0.3s ease;
 }

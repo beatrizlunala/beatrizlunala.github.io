@@ -3,116 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beatriz Luna's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
+    <title>hi there :]</title>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1 class="hello">Hello! I'm Beatriz ★</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">CS Projects</a></li>
-                <li><a href="#gallery">Art/Design Projects</a></li>
-                <li><a href="files/BeatrizLuna_Portfolio_Oct2024.pdf">All Works</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <ul class="tabs">
+        <li data-tab-target="#i-am" class="active tab">i am</li>
+        <li data-tab-target="#i-code" class="tab">i code</li>
+        <li data-tab-target="#i-design" class="tab">i design</li>
+        <li data-tab-target="#i-draw" class="tab">i draw</li>
+        <li data-tab-target="#i-think" class="tab">i think</li>
+    </ul>
 
-<section id="about" class="container">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" style="padding: 50px;">
-    <div class="about-text">
-        <h2>∘₊✧ About Me ✧₊∘</h2>
-        <div class="info">
-            <p>
-                ✎ I’m a Computer Science and Design student at Northeastern University with a passion
-                for interactive media and storytelling. I’ve always been interested in how digital
-                experiences can inspire thoughtful conversations and encourage people to reflect
-                on themselves and others. As I strengthen my technical skills in Java and other
-                programming languages, focusing on UI/UX design and web development, I strive to
-                craft interactive experiences that can challenge users to think critically.
-                Ultimately, I want my work to spark connection and inspire deeper thought.
-            </p>
-            <p>
-                ✎ Contact Me:<br>
+    <div class="tab-content">
+        <div id="i-am" data-tab-content class="active">
+            <div class="intro">
+                <h1>Bea Luna</h1> <img src="resources/profile.jpg" alt="Pictures of Me" class="profile-pic" style="padding: 5px; width: 20%"><br>
                 <a href="mailto:beatrizlunala@gmail.com">beatrizlunala@gmail.com</a><br>
                 <a href="tel:4257771860">(425)-777-1860</a><br>
-                <a href="https://www.linkedin.com/in/beatrizlunala">LinkedIn</a>
-            </p>
+                <a href="https://www.linkedin.com/in/beatrizlunala">LinkedIn!</a><br>
+                <a href="resources/files/BeatrizLuna_Resume_Nov2024.pdf">My resume!</a>
+            </div>
+            
+            <div class="project">
+                <h3>My passion stems from a need to create thoughtful experiences that inspires deeper thought.</h3>
+                <p>
+                    From a young age, I’ve been passionate about creating art inspired by the many facets of my life. Now, 
+                    as a Computer Science and Design student at Northeastern University, I’m exploring the powerful 
+                    intersection between art and technology and the ways they can elevate one another. With a minor in 
+                    Writing, my interest in storytelling drives me to craft digital experiences that spark reflection and 
+                    inspire thoughtful conversations. As I deepen my skills in Java and other programming languages, 
+                    my goal is to create interactive experiences that captivate users and encourage them to see 
+                    themselves—and the world—through a new lens.
+                </p>
+            </div>
+        </div>
 
+        <div id="i-code" data-tab-content>
+            <div class="info">
+                <p style="font-size:16px;">
+                    Note: some of my GitHub repositories are private to preserve the integrity of my code. If you would like to
+                    see my code, please <a href="mailto:beatrizlunala@gmail.com">email me</a> and I'll grant you access to it! Thx!
+                </p>
+                <h4>Languages: Java | HTML | CSS | C# | JavaScript</h4>
+                <h4>IDEs: IntelliJ | Processing | Eclipse | VSCode</h4>
+                <h4>Systems: Mac OS X</h4>
+            </div>
+            
+
+
+            <div class="projects">
+                <h2>projects</h2>
+                <div class="project">
+                    <h3>Stocks</h3>
+                    <p>In collaboration with my lab partner, we designed a program that simulates participating
+                        in the stock market using real stock historical data. The user has the ability to make
+                        portfolio(s) that they can buy and sell shares from, and they can check its performance
+                        over time.
+                    </p>
+                </div>
+                <div class="project">
+                <h3><a href='https://bealunala.github.io/touching-grass/'>Touching Grass</a></h3>
+                    <p>To further my HTML skills, I programmed a website hosting a game I designed, critiquing
+                        the absurdity of the Internet and its tendency to radicalize & sensationalize anything
+                        & everything. I am currently developing a zine expanding on this concept and characters.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3><a href='flame.html'>Flame Game</a></h3>
+                <p>
+                    In Processing, I created a simple game about a little sentient flame who is stuck in the 
+                    middle of a rainstorm. The flame must avoid the falling raindrops to survive! 
+                </p>
+            </div>
+        </div>
+
+        <div id="i-design" data-tab-content>
+            <div class="info">
+                <h4>Adobe Creative Suite: Illustrator | Photoshop | InDesign</h4>
+            </div>
+
+            <div class="projects">
+                <h2>projects</h2>
+                <div class="project">
+                    <img src="resources/design/BrewIt_HiFis.png" alt="BrewIt">
+                    <h3><a href="https://www.figma.com/proto/1aUAghFkHgsV3Mq4Wh59gN/%5Bw%5D-Bea_Luna?node-id=4151-4585&t=pzZwH6YXx2A2nARN-1">BrewIt</a></h3>
+                    <p>
+                        Exploring the translation from an analog interaction (making coffee with a coffee machine)
+                        to a digital interface. How does one replicate the user's experience of something physical within 
+                        a digital space? To tackle this question, I __ BrewIt, a mobile app based off Netflix's UI that 
+                        lets the user browse and brew coffee.
+                    </p>
+                </div>
+            
+                <div class="project">
+                    <img src="resources/design/typefacePosters.png" alt="Typeface Posters">
+                    <h3><a href="resources/design/typeface-poster-FINAL.pdf">Typeface Posters</a></h3>
+                    <p>
+                        A pair of informational posters on the typefaces Didot & Helvetica and their respective backgrounds.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="resources/design/BookNook_HiFis.png" alt="BookNook">
+                    <h3><a href="https://www.figma.com/proto/B7LYd5ZHIzR7phh70c6AsU/BookNook?node-id=30-388&t=ULNsrpUMPJ2fcbA1-1">BookNook</a></h3>
+                    <p>
+                        Make a game out of reading books with my concept app BookNook! Track the books have/will read, their respective ratings, and your 
+                        thoughts on them through a goal-achievement-based system. Add your friends to see each other’s reading achievements, and leave 
+                        little comments about whatever they’re reading!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="i-draw" data-tab-content>
+            <h4></h4>
+            <div class="projects" id="gallery">
+                <h2>projects</h2>
+                <figure>
+                    <a href="resources/art/MoodSelfPortrait.jpg"><img src="resources/art/MoodSelfPortrait.jpg" alt="Mood as Self Portrait"></a>
+                    <figcaption>Mood</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="resources/art/TwoSpoolsOfMySoul.jpg"><img src="resources/art/TwoSpoolsOfMySoul.jpg" alt="Two Spools of my Soul"></a>
+                    <figcaption>Two Spools of my Soul</figcaption>
+                </figure>
+                <!-- <p>
+                        Winner of the Greater Conejo Valley Juried Art Show’s Greg Cole Memorial Award,
+                        this piece is an introspection of my identity as a Filipino-American.
+                        2022, Acrylic paint on 18"x24" canvas.
+                    </p> -->
+
+                <figure>
+                    <a href="resources/art/SaintDymphaHearMyPrayers.gif"><img src="resources/art/SaintDymphaHearMyPrayers.gif" alt="Saint Dympha, Hear My Prayers"></a>
+                    <figcaption>Saint Dympha, Hear My Prayers</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="resources/art/NoteToSelf.jpg"><img src="resources/art/NoteToSelf.jpg" alt="Note to Self"></a>
+                    <figcaption>Note to Self</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div id="i-think" data-tab-content>
+            <h4>i think a lot, and sometimes i just need to yell those thoughts into a digital void.
+                sometimes people want to listen, or maybe you're snooping around my website because 
+                i put it on my resume, so here we are.</h4>
+
+            <div class="thoughts">
+                <div class="project">
+                    <h3>october 31 2024</h3>
+                    <p>
+                        Taking inspiration is essentially a flattering version of stealing. I forgot who said
+                        it, but all good artists <b>are</b> "thieves," in the most basic sense of the word.
+                        I find a lot of words are doomed to carry the burden of human connotations, even though
+                        fundamentally, they are not good nor bad. i.e. manipulation. shout out my high school 
+                        English Capstone classmate for getting me to rethink my conception of manipulation. go lions ig!!
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-
-<section id="skills" class="container">
-    <h2>∘₊✧ Skills ✧₊∘</h2>
-    <div class="columns">
-        <div class="column">
-            <ul>
-                <li>Adobe: Illustrator, Photoshop, InDesign</li>
-                <li>Languages: Java, HTML, CSS, C#</li>
-                <li>Systems: Mac OS X</li>
-
-            </ul>
-        </div>
-</section>
-
-<section id="projects" class="container">
-    <h2>∘₊✧ Coding Projects ✧₊∘</h2>
-    <p style="font-size:12px;">Note: My GitHub repositories are private in order to preserve the
-        integrity of my code.
-        If you would like to view my code, please email me! :)</p>
-    <div class="project">
-        <h3><a href="https://github.com/bealunala/StocksVer2">Stocks</a></h3>
-        <p>In collaboration with my lab partner, we designed a program that simulates participating
-            in the stock market
-            using real stock historical data. The user has the ability to make portfolio(s) that
-            they can buy and sell
-            shares from, and they can check its performance over time. </p>
-    </div>
-    <div class="project">
-        <h3><a href="https://bealunala.github.io/touching-grass/">Touching Grass</a></h3>
-        <p>To further my HTML skills, I programmed a website hosting a game I designed, critiquing
-            the absurdity of the
-            Internet and its tendancy to radicalize & sensationalize anything & everything. 
-            I am currently developing a zine expanding on this concept and characters.
-        </p>
-    </div>
-</section>
-
-<section id="gallery" class="container">
-    <h2>∘₊ ✧ Art Projects ✧₊∘</h2>
-    <div class="gallery">
-        <figure>
-            <a href="tss.html"><img src="images/TwoSpoolsOfMySoul.jpg" alt="Two Spools of my Soul"></a>
-            <figcaption>Two Spools of my Soul</figcaption>
-        </figure>
-        <figure>
-            <a href="objects.html"><img src="images/Object as Self Portrait.jpg" alt="Objects as Self Portrait"></a>
-            <figcaption>Objects as Self Portrait</figcaption>
-        </figure>
-        <figure>
-            <a href="mood.html"><img src="images/Mood Self Portrait.jpg" alt="Mood Self Portrait"></a>
-            <figcaption>Mood Self Portrait</figcaption>
-        </figure>
-        <figure>
-            <a href="flame.html"><img src="images/flame-thumbnail.png" alt="Mood Self Portrait"></a>
-            <figcaption>Flame</figcaption>
-        </figure>
-        <figure>
-            <a href="sdhmp.html"><img src="images/P6_BeaLuna_SaintDymphnaHearMyPrayers.gif" 
-                alt="Saint Dymphna, Hear my Prayers"></a>
-                <figcaption>Saint Dymphna, Hear my Prayers</figcaption>
-        </figure>
-        <figure>
-            <a href="sketchquential.html"><img src="images/sketchquential_cover.png"
-                                      alt="Sketchquential"></a>
-            <figcaption>Sketchquential</figcaption>
-        </figure>
-    </div>
-</section>
+    <script src="script.js"></script>
 </body>
 </html>
