@@ -6,7 +6,7 @@ body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
     font-family: Habbo;
-    background: rgb(20, 36, 36);
+    /* background: rgb(20, 36, 36); */
     background: linear-gradient(
         rgb(20, 36, 36) 0%,
         rgb(14, 80, 76) 100%
@@ -20,6 +20,8 @@ h1,h2,h3,h4{
     font-family: Beanstalk;
     text-align:center;
 }
+
+
 
 a {
     color: lightseagreen;
@@ -72,7 +74,8 @@ a:hover {
 }
 
 .tabs {
-    /* position: fixed; */
+    position: sticky;
+    background-color: rgb(20, 36, 36);
     font-family: Rockboxcond12;
     display:flex;
     justify-content: space-around;
