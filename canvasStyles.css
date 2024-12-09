@@ -7,12 +7,12 @@ body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
     font-family: Habbo;
-    /* background: rgb(20, 36, 36); */
+    /* background: #4C3329; */
     background: linear-gradient(
-        rgb(20, 36, 36) 0%,
-        rgb(14, 80, 76) 100%
+        #4C3329 0%,
+        #6A4A3C 100%
         );
-    color: lightseagreen;
+    color: #D19B83;
     font-size:30px;
     
     list-style: none;
@@ -61,11 +61,11 @@ img {
 }
 
 a {
-    color: lightseagreen;
+    color: #F7D1AE;
 }
 a:hover {
     cursor:url(resources/cursors/hovering.png), pointer;
-    color: rgb(40, 223, 40);
+    color: #01A0B0;
 }
 
 .tabs {
@@ -73,7 +73,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(20, 36, 36);
+    background-color: #4C3329;
     font-family: Rockboxcond12;
     display: flex;
     justify-content: space-around;

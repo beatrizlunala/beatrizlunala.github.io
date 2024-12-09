@@ -6,12 +6,12 @@ body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
     font-family: Habbo;
-    /* background: rgb(20, 36, 36); */
+    /* background: #4C3329; */
     background: linear-gradient(
-        rgb(20, 36, 36) 0%,
-        rgb(14, 80, 76) 100%
+        #4C3329 0%,
+        #6A4A3C 100%
         );
-    color: lightseagreen;
+    color: #D19B83;
     font-size:30px;
     text-align: center;
     list-style: none;
@@ -25,11 +25,11 @@ h1,h2,h3,h4{
 
 
 a {
-    color: lightseagreen;
+    color: #D19B83;
 }
 a:hover {
     cursor:url(resources/cursors/hovering.png), pointer;
-    color: rgb(40, 223, 40);
+    color: #01A0B0;
 }
 
 .column {
@@ -50,7 +50,7 @@ a:hover {
 
 .project {
     justify-content: space-around;
-    border: 2px solid lightseagreen;
+    border: 2px solid #D19B83;
     padding: 20px;
     margin: 5%;
     text-align: left;
@@ -58,17 +58,6 @@ a:hover {
     /* margin-left: auto;
     margin-right: auto; */
 }
-
-/* .info {
-    border: none;
-    margin: 5%;
-    display: flex; 
-    justify-content: center;
-    
-}
-.intro {
-    margin: 80px;
-} */
 
 [data-tab-content] {
     display: none;
@@ -83,14 +72,14 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(20, 36, 36);
+    background-color: #4C3329;
     font-family: Rockboxcond12;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
     padding: 10px 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .tabs li {
@@ -104,8 +93,9 @@ a:hover {
 
 .tab:hover, .tab.active{
     cursor:url(resources/cursors/hovering.png), pointer;
-    color: rgb(21, 36, 36);
-    background: lightseagreen;
+    color: #F7D1AE;
+    background: #6A4A3C;
+    
 }
 
 #gallery {
