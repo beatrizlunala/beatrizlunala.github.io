@@ -27,7 +27,8 @@ p {
 h1,h2,h3,h4{
     text-align: center;
     margin: auto;
-    font-family: Beanstalk;
+    /* font-family: Beanstalk; */
+    font-family: MadeGentle;
     text-align:center;
 }
 
