@@ -117,7 +117,7 @@ a:hover {
     align-content: center;
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
     box-shadow: 0 0 10px #000;
 }
 
