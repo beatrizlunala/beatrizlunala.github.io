@@ -49,14 +49,13 @@ a:hover {
   }
 
 .project {
+    /* color: #6A4A3C;
+    background-color: #F7D1AE; */
     justify-content: space-around;
-    border: 2px solid #D19B83;
+    /* border: 2px solid #D19B83; */
     padding: 20px;
     margin: 5%;
     text-align: left;
-    /* max-width: fit-content; */
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 [data-tab-content] {
