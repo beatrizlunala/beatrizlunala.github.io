@@ -59,7 +59,7 @@ a:hover {
     margin-right: auto; */
 }
 
-.info {
+/* .info {
     border: none;
     margin: 5%;
     display: flex; 
@@ -67,26 +67,35 @@ a:hover {
     
 }
 .intro {
-    margin: 50px;
-}
+    margin: 80px;
+} */
 
 [data-tab-content] {
     display: none;
 }
 .active[data-tab-content] {
     display: block;
+    margin: 80px;
 }
 
 .tabs {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: rgb(20, 36, 36);
     font-family: Rockboxcond12;
-    display:flex;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
-    border: 2px solid lightseagreen;
-    padding: 5px;
-    /* margin: auto; */
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tabs li {
+    flex: 1; /* Ensure equal space for each tab */
+    text-align: center; /* Center align text */
 }
 
 .tab {
