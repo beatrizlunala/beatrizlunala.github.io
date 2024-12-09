@@ -1,12 +1,14 @@
 @font-face { font-family: Beanstalk; src: url('fonts/Beanstalk.ttf'); } 
 @font-face { font-family: Habbo; src: url('fonts/Habbo.ttf'); } 
 @font-face { font-family: Rockboxcond12; src: url('fonts/Rockboxcond12.ttf'); } 
-@font-face { font-family: MadeGentle; src: url('fonts/MADE\ Gentle\ PERSONAL\ USE.otf')}
+@font-face { font-family: MadeGentle; src: url('fonts/MADE\ Gentle\ PERSONAL\ USE.otf'); } 
+@font-face { font-family: Urbanist; src: url('fonts/Urbanist-VariableFont_wght.ttf'); } 
 
 body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
-    font-family: Habbo;
+    /* font-family: Habbo; */
+    font-family: Urbanist;
     /* background: #4C3329; */
     background: linear-gradient(
         #4C3329 0%,

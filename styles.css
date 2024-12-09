@@ -1,12 +1,16 @@
 @font-face { font-family: Beanstalk; src: url('fonts/Beanstalk.ttf'); } 
 @font-face { font-family: Habbo; src: url('fonts/Habbo.ttf'); } 
 @font-face { font-family: Rockboxcond12; src: url('fonts/Rockboxcond12.ttf'); } 
+@font-face { font-family: MadeGentle; src: url('fonts/MADE\ Gentle\ PERSONAL\ USE.otf'); } 
+@font-face { font-family: Urbanist; src: url('fonts/Urbanist-VariableFont_wght.ttf'); } 
+
 
 body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
-    font-family: Habbo;
+    /* font-family: Habbo; */
     /* background: #4C3329; */
+    font-family: Urbanist;
     background: linear-gradient(
         #4C3329 0%,
         #6A4A3C 100%
@@ -18,11 +22,10 @@ body {
 }
 h1,h2,h3,h4{
     margin: auto;
-    font-family: Beanstalk;
-    text-align:center;
+    /* font-family: Beanstalk; */
+    font-family: MadeGentle;
+    /* text-align:center; */
 }
-
-
 
 a {
     color: #D19B83;
@@ -50,7 +53,6 @@ a:hover {
 
 .project {
     /* color: #6A4A3C;
-    background-color: #F7D1AE; */
     justify-content: space-around;
     /* border: 2px solid #D19B83; */
     padding: 20px;
@@ -64,6 +66,7 @@ a:hover {
 .active[data-tab-content] {
     display: block;
     margin: 80px;
+    /* background-color:#4C33x29; */
 }
 
 .tabs {
@@ -72,7 +75,8 @@ a:hover {
     left: 0;
     right: 0;
     background-color: #4C3329;
-    font-family: Rockboxcond12;
+    /* font-family: Rockboxcond12; */
+    font-family: MadeGentle;
     display: flex;
     justify-content: space-around;
     align-items: center;
