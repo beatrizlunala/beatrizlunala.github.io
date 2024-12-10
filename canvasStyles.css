@@ -20,16 +20,12 @@ body {
     list-style: none;
 }
 
-p {
-    text-align: center;
-}
-
 h1,h2,h3,h4{
-    text-align: center;
+    font-weight: normal;
     margin: auto;
     /* font-family: Beanstalk; */
     font-family: MadeGentle;
-    text-align:center;
+    /* text-align:center; */
 }
 
 div {
@@ -45,20 +41,15 @@ div {
 }
 
 iframe {
-    width: 70%; /* Full width */
-    height: 70vh; /* Full height of the container */
-    border: none; /* No border */
-    display:block;
-    margin: 0;
-    padding: 0;
+    margin-left: 0;
+    display: block;
+    width: 70%;
+    height: 70vh;
+    border: none;
 }
 
 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin:auto;
-
     width: 70%;
     height: auto;
 }
@@ -81,7 +72,6 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;
     padding: 10px 0;
     margin: 0;
 }

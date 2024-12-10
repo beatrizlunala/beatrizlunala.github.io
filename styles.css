@@ -21,6 +21,7 @@ body {
     list-style: none;
 }
 h1,h2,h3,h4{
+    font-weight: normal;
     margin: auto;
     /* font-family: Beanstalk; */
     font-family: MadeGentle;
