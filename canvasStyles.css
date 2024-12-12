@@ -7,9 +7,7 @@
 body {
     cursor:url(resources/cursors/notHovering.png), auto;
     margin: 40px;
-    /* font-family: Habbo; */
     font-family: Urbanist;
-    /* background: #4C3329; */
     background: linear-gradient(
         #4C3329 0%,
         #6A4A3C 100%
@@ -23,13 +21,10 @@ body {
 h1,h2,h3,h4{
     font-weight: normal;
     margin: auto;
-    /* font-family: Beanstalk; */
     font-family: MadeGentle;
-    /* text-align:center; */
 }
 
 div {
-    /* border: 2px solid lightseagreen; */
     padding:5%;
     margin: 10px;
 }
