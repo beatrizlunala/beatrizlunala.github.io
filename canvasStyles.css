@@ -5,7 +5,7 @@
 @font-face { font-family: Urbanist; src: url('fonts/Urbanist-VariableFont_wght.ttf'); } 
 
 body {
-    cursor:url(resources/cursors/notHovering.png), auto;
+    cursor:url(resources/cursors/coffeeNormal.png), auto;
     margin: 40px;
     font-family: Urbanist;
     background: linear-gradient(
@@ -53,7 +53,7 @@ a {
     color: #F7D1AE;
 }
 a:hover {
-    cursor:url(resources/cursors/hovering.png), pointer;
+    cursor:url(resources/cursors/coffeeSteaming.png), pointer;
     color: #01A0B0;
 }
 

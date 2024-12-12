@@ -3,7 +3,7 @@
 
 
 body {
-    cursor:url(resources/cursors/notHovering.png), auto;
+    cursor:url(resources/cursors/coffeeNormal.png), auto;
     margin: 40px;
     font-family: Urbanist;
     background: linear-gradient(
@@ -25,7 +25,7 @@ a {
     color: #D19B83;
 }
 a:hover {
-    cursor:url(resources/cursors/hovering.png), pointer;
+    cursor:url(resources/cursors/coffeeSteaming.png), pointer;
     color: #01A0B0;
 }
 
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .tab:hover, .tab.active{
-    cursor:url(resources/cursors/hovering.png), pointer;
+    cursor:url(resources/cursors/coffeeSteaming.png), pointer;
     color: #F7D1AE;
     background: #6A4A3C;
     
