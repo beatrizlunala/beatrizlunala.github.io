@@ -1,32 +1,36 @@
-@font-face { font-family: MadeGentle; src: url('fonts/MADE\ Gentle\ PERSONAL\ USE.otf'); } 
+@font-face { font-family: Playfair; src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf'); } 
 @font-face { font-family: Urbanist; src: url('fonts/Urbanist-VariableFont_wght.ttf'); } 
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 body {
     cursor:url(resources/cursors/coffeeNormal.png), auto;
     margin: 40px;
     font-family: Urbanist;
     background: linear-gradient(
-        #4C3329 0%,
-        #6A4A3C 100%
+        #3F292B 0%,
+        #563526 100%
         );
-    color: #D19B83;
-    font-size:25px;
+    color: #DEA450;
+    font-size:18px;
     text-align: center;
     list-style: none;
 }
 h1,h2,h3,h4{
     font-weight: normal;
     margin: auto;
-    font-family: MadeGentle;
+    font-family: Playfair;
 }
 
 a {
-    color: #D19B83;
+    color: #DEA450;
 }
 a:hover {
     cursor:url(resources/cursors/coffeeSteaming.png), pointer;
-    color: #01A0B0;
+    color: #FFBD5E;
 }
 
 .column {
@@ -45,9 +49,9 @@ a:hover {
   }
 
 .project {
-    /* color: #6A4A3C;
+    /* color: #563526;
     justify-content: space-around;
-    /* border: 2px solid #D19B83; */
+    /* border: 2px solid #DEA450; */
     padding: 20px;
     margin: 5%;
     text-align: left;
@@ -59,7 +63,7 @@ a:hover {
 .active[data-tab-content] {
     display: block;
     margin: 80px;
-    /* background-color:#6A4A3C; */
+    /* background-color:#563526; */
 }
 
 .tabs {
@@ -67,14 +71,15 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #4C3329;
-    font-family: MadeGentle;
+    background-color: #3F292B;
+    font-family: Playfair;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
     padding: 10px 0;
     margin: 0 auto;
+    box-shadow: #221f1f 0px 0px 15px;
 }
 
 .tabs li {
@@ -88,9 +93,8 @@ a:hover {
 
 .tab:hover, .tab.active{
     cursor:url(resources/cursors/coffeeSteaming.png), pointer;
-    color: #F7D1AE;
-    background: #6A4A3C;
-    
+    color: #FFBD5E;
+    font-style: italic;
 }
 
 #gallery {
