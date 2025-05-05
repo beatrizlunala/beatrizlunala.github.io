@@ -20,7 +20,7 @@ body {
     list-style: none;
 }
 h1,h2,h3,h4{
-    font-weight: normal;
+    /* font-weight: normal; */
     margin: auto;
     font-family: Playfair;
 }
@@ -66,9 +66,25 @@ a:hover {
     /* background-color:#563526; */
 }
 
-.tabs {
+.alert {
+    z-index: 1001; /* layers on top of navbar */
     position: fixed;
+    overflow: scroll;
+    background-color: #DEA450;
+    color: #221f1f;
+    width: 100%;
+    left: 0;
     top: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.tabs {
+    z-index: 1000; /* layers below the marquee */
+    position: fixed;
+    top: 30px;
     left: 0;
     right: 0;
     background-color: #3F292B;
