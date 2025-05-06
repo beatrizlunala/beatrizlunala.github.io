@@ -142,3 +142,78 @@ a:hover {
     opacity: 0.5;
     transition: 0.3s ease;
 }
+
+/* Base styles remain the same for larger screens */
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 768px) {
+    body {
+      margin: 20px;
+      font-size: 16px;
+    }
+    
+    .project {
+      margin: 3%;
+      padding: 15px;
+    }
+    
+    .active[data-tab-content] {
+      margin: 60px 40px;
+    }
+    
+    .project img {
+      width: 85%;
+    }
+    
+    #gallery figure {
+      width: 45%;
+    }
+  }
+  
+  /* Small screens (mobile phones) */
+  @media screen and (max-width: 480px) {
+    body {
+      margin: 10px;
+      font-size: 14px;
+    }
+    
+    .tabs {
+      flex-direction: column;
+      position: fixed;
+      top: 30px; /* Adjust based on marquee height */
+      padding: 0;
+    }
+    
+    .tab {
+      padding: 8px;
+      border-bottom: 1px solid rgba(222, 164, 80, 0.3);
+      width: 100%;
+    }
+    
+    .active[data-tab-content] {
+      margin: 200px 15px 40px 15px; /* Increased top margin for mobile nav */
+    }
+    
+    .project {
+      margin: 2%;
+      padding: 10px;
+    }
+    
+    .project img {
+      width: 100%;
+    }
+    
+    #gallery figure {
+      width: 100%;
+    }
+    
+    .info div {
+      flex-direction: column !important;
+    }
+    
+    /* Fix the display for the skills section */
+    .info div[style*="display: flex"] {
+      flex-direction: column !important;
+      display: block !important;
+    }
+  }
