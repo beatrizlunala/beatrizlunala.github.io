@@ -17,8 +17,8 @@ body {
   margin: 0;
   padding: 1rem;
   font-family: Average, serif;
-  background: linear-gradient(#4c3329 0%, #6a4a3c 100%);
-  color: #d19b83;
+  background: linear-gradient(#3f292b 0%, #563526 100%);
+  color: #dea450;
   font-size: 1.125rem;
   text-align: center;
   list-style: none;
@@ -52,12 +52,12 @@ h4 {
 }
 
 a {
-  color: #d19b83;
+  color: #f7d1ae;
 }
 
 a:hover {
   cursor: url(resources/cursors/coffeeSteaming.png), pointer;
-  color: #dea450;
+  color: #e7ddd7;
 }
 
 img {
@@ -71,7 +71,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #4c3329;
+  background-color: #3f292b;
   font-family: PlayfairDisplay, serif;
   display: flex;
   justify-content: space-around;
@@ -99,7 +99,7 @@ img {
 .tab.active {
   cursor: url(resources/cursors/coffeeSteaming.png), pointer;
   color: #f7d1ae;
-  background: #6a4a3c;
+  background: #563526;
 }
 
 /* Main Content */
@@ -304,7 +304,6 @@ img {
   }
 }
 
-/* Fix for corruption notice */
 .corruption-notice {
   background: rgba(218, 164, 80, 0.1);
   padding: 1.5rem;
