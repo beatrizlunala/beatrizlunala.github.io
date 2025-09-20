@@ -1,0 +1,129 @@
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url("resources/files/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Average;
+  src: url("resources/files/Average-Regular.ttf");
+}
+
+body {
+  cursor: url(resources/cursors/coffeeNormal.png), auto;
+  margin: 40px;
+  font-family: Average;
+  background: linear-gradient(#4c3329 0%, #6a4a3c 100%);
+  color: #d19b83;
+  font-size: 25px;
+  text-align: center;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: auto;
+  font-family: PlayfairDisplay;
+}
+
+a {
+  color: #d19b83;
+}
+a:hover {
+  cursor: url(resources/cursors/coffeeSteaming.png), pointer;
+  color: #01a0b0;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project img {
+  width: 70%;
+}
+
+.project {
+  /* color: #6A4A3C;
+    justify-content: space-around;
+    /* border: 2px solid #D19B83; */
+  padding: 20px;
+  margin: 5%;
+  text-align: left;
+}
+
+[data-tab-content] {
+  display: none;
+}
+.active[data-tab-content] {
+  display: block;
+  margin: 80px;
+  /* background-color:#6A4A3C; */
+}
+
+.tabs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4c3329;
+  font-family: PlayfairDisplay;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.tabs li {
+  flex: 1;
+  text-align: center;
+}
+
+.tab {
+  padding: 10px;
+}
+
+.tab:hover,
+.tab.active {
+  cursor: url(resources/cursors/coffeeSteaming.png), pointer;
+  color: #f7d1ae;
+  background: #6a4a3c;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#gallery figure {
+  width: 30%;
+  margin: 10px;
+  position: relative;
+}
+
+#gallery img {
+  align-content: center;
+  width: 100%;
+  height: auto;
+  /* display: block; */
+  box-shadow: 0 0 10px #000;
+}
+
+#gallery figcaption {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#gallery figure:hover img {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
