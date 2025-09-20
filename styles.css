@@ -31,7 +31,7 @@ a {
 }
 a:hover {
   cursor: url(resources/cursors/coffeeSteaming.png), pointer;
-  color: #01a0b0;
+  color: #dea450;
 }
 
 .column {
