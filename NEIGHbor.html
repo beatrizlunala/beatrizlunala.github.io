@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="NEIGHborStyles.css" />
+    <title>NEIGHbor: Farmers Horse Coffee App | Bea Luna</title>
+  </head>
+  <body>
+    <div class="tabs" style="padding: none; text-align: center">
+      <a class="back" href="index.html" style="text-decoration: none">←</a>
+    </div>
+
+    <header>
+      <h1>NEIGHbor <span class="status-badge">In Progress</span></h1>
+      <p class="subtitle">An App for Farmers Horse Coffee (Working Title)</p>
+      <p>Fall 2025 | Topics in Interaction Design Inquiry</p>
+    </header>
+
+    <div class="container">
+      <section id="overview">
+        <h2>Project Overview</h2>
+        <p>
+          NEIGHbor is a mobile app concept designed to enhance the experience at
+          Farmers Horse Coffee (FHC), a beloved local cafe near Northeastern
+          University's campus. Through extensive user research and interviews,
+          this project explores how digital tools can complement—rather than
+          replace—the intimate, "lived-in" atmosphere that makes FHC special.
+        </p>
+
+        <div class="research-questions">
+          <h3>Research Questions: How Might We...</h3>
+          <ul>
+            <li>
+              ...preserve the work-social balance of a smaller, more intimate
+              cafe without having one group of people overbearing the other?
+            </li>
+            <li>
+              ...encourage social interaction without disrupting the
+              work-focused atmosphere?
+            </li>
+            <li>
+              ...help users discover and engage with the 'intimate' community
+              elements that create belonging?
+            </li>
+            <li>
+              ...help new visitors understand what to expect from Farmers Horse
+              before their first visit?
+            </li>
+            <li>
+              ...preserve the spontaneous, exploratory feeling while providing
+              useful logistical information?
+            </li>
+            <li>
+              ...help users transition between work mode and social mode within
+              the same visit?
+            </li>
+            <li>
+              ...surface the "parallel play" motivation that makes shared
+              workspaces productive?
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="context">
+        <h2>About Farmers Horse Coffee</h2>
+        <p>
+          Farmers Horse Coffee is a small, intimate cafe located across from the
+          Massachusetts Avenue Orange Line station in Boston. Its cozy
+          atmosphere, customer graffiti-covered walls, community board games,
+          and carefully curated interior make it a hot spot for students and
+          working adults who want to spend hours there—whether catching up with
+          an old friend or grinding out remote work.
+        </p>
+
+        <h3>What Makes It Special?</h3>
+        <p>
+          Unlike chain cafes that feel transactional, Farmers Horse has a
+          distinct "lived-in" character. The space features:
+        </p>
+        <ul>
+          <li>
+            Customer writings and drawings covering the walls (some dating back
+            to 2017)
+          </li>
+          <li>Well-used board games available for patrons</li>
+          <li>A mix of communal tables and cozy couch seating</li>
+          <li>An outdoor patio area on Mass Ave</li>
+          <li>A small free library box outside</li>
+        </ul>
+      </section>
+
+      <section id="research">
+        <h2>Research Process</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Phase 1: Initial Exploration</h3>
+            <p>
+              Documented three potential locations, ultimately selecting Farmers
+              Horse Coffee based on its unique community dynamics and
+              dual-purpose usage (work vs. social).
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Phase 2: Deep Dive Observation</h3>
+            <p>
+              Conducted extensive observation at different times of day and days
+              of the week to understand usage patterns, peak hours, and how the
+              space transforms based on context.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Phase 3: User Interviews</h3>
+            <p>
+              Interviewed four regular patrons to understand motivations, pain
+              points, and what keeps them coming back to Farmers Horse over
+              other cafes.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Phase 4: Analysis & Synthesis</h3>
+            <p>
+              Identified key themes and developed revised "How Might We"
+              questions to guide the design direction.
+            </p>
+          </div>
+        </div>
+
+        <div class="methodology-list">
+          <h3>Interview Methodology</h3>
+          <ul>
+            <li>
+              <strong>Format:</strong> Semi-structured interviews lasting
+              approximately 30 minutes
+            </li>
+            <li>
+              <strong>Locations:</strong> Three in-person (two on campus, one at
+              Farmers Horse), one via Zoom
+            </li>
+            <li>
+              <strong>Recording:</strong> All interviews were recorded (with
+              consent) and transcribed for analysis
+            </li>
+            <li>
+              <strong>Criteria:</strong> Participants had to have visited
+              Farmers Horse at least once, with preference for "regulars" (past
+              or present)
+            </li>
+            <li>
+              <strong>Demographics:</strong> Primarily college students with
+              interest or experience in Design or Computer Science
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="participants">
+        <h2>Meet the Participants</h2>
+
+        <div class="participant-grid">
+          <div class="participant-card">
+            <h4>Interviewee One</h4>
+            <p>
+              <strong>Profile:</strong> Fourth-year Computer Science and Design
+              major
+            </p>
+            <p>
+              <strong>Usage:</strong> Primarily goes to cafes for remote work
+            </p>
+            <p>
+              <strong>FH Frequency:</strong> Visited 4-5 times when living
+              nearby
+            </p>
+          </div>
+
+          <div class="participant-card">
+            <h4>Interviewee Two</h4>
+            <p><strong>Profile:</strong> Fourth-year Computer Science major</p>
+            <p>
+              <strong>Usage:</strong> Goes to cafes to socialize and do remote
+              work
+            </p>
+            <p><strong>FH Frequency:</strong> Visits once every two weeks</p>
+          </div>
+
+          <div class="participant-card">
+            <h4>Interviewee Three</h4>
+            <p>
+              <strong>Profile:</strong> Third-year Business and Design major
+            </p>
+            <p>
+              <strong>Usage:</strong> Primarily goes to cafes for school work
+            </p>
+            <p>
+              <strong>FH Frequency:</strong> Visits once per semester or year
+            </p>
+          </div>
+
+          <div class="participant-card">
+            <h4>Interviewee Four</h4>
+            <p>
+              <strong>Profile:</strong> Third-year Health Science and Computer
+              Science major
+            </p>
+            <p>
+              <strong>Usage:</strong> Primarily goes to cafes to socialize with
+              friends
+            </p>
+            <p>
+              <strong>FH Frequency:</strong> First-time visitor during interview
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="findings">
+        <h2>Key Findings</h2>
+
+        <div class="finding">
+          <h3>1. Dual-Purpose Tensions</h3>
+          <p>
+            The space successfully accommodates both focused work and social
+            interaction, but these modes coexist rather than conflict. Users
+            appreciate the "parallel play" dynamic—working individually while
+            surrounded by others doing the same.
+          </p>
+
+          <div class="quote">
+            "If everyone is kind of also doing the same thing, there's
+            definitely a little bit of that motivation... It's a parallel play
+            kind of thing."
+            <cite>— Interviewee Two</cite>
+          </div>
+        </div>
+
+        <div class="finding">
+          <h3>2. Physical Constraints Create User Friction</h3>
+          <p>
+            Limited seating, long lines that extend out the door, lack of AC in
+            summer, and inconsistent power outlet availability are significant
+            pain points. However, users rated these issues as 4-5 out of 5 in
+            terms of impact, meaning they often choose alternative cafes when
+            these constraints are present.
+          </p>
+
+          <div class="quote">
+            "It was so busy we ended up going to Cafe Bene. So, like, I guess
+            that was, like an impact... but we were still satisfied. Farmers
+            Horse was more of a means to an end."
+            <cite>— Interviewee Two</cite>
+          </div>
+        </div>
+
+        <div class="finding">
+          <h3>
+            3. The "Lived-In" Character Creates Belonging Without Direct
+            Interaction
+          </h3>
+          <p>
+            The graffiti walls, worn board games, and community bulletin board
+            create a sense of connection to past visitors without requiring
+            face-to-face interaction. This passive participation in the space's
+            history is deeply meaningful to users.
+          </p>
+
+          <div class="quote">
+            "It feels like an inviting space. More of a neighborhood cafe, as
+            opposed to chain cafes like Pavement."
+            <cite>— Interviewee One</cite>
+          </div>
+
+          <div class="quote">
+            "I think about those [graffiti messages] sometimes... we were
+            existing in the same spot, doing completely different things... It's
+            kind of cool to be a part of that, this shared experience."
+            <cite>— Interviewee Four</cite>
+          </div>
+        </div>
+
+        <div class="finding">
+          <h3>4. Generational Barriers to Social Connection</h3>
+          <p>
+            Multiple participants expressed desire for social connection but
+            felt constrained by unspoken social norms that make approaching
+            strangers feel awkward or inappropriate. This is perceived as a
+            generational issue rather than a space-specific problem.
+          </p>
+
+          <div class="quote">
+            "I feel like no one in our age group is, like, willingly approaching
+            a stranger to become friends, unfortunately... it's, like, kind of
+            strange nowadays to, like, approach someone"
+            <cite>— Interviewee Three</cite>
+          </div>
+
+          <p>
+            <strong>Interesting Note:</strong> When asked about indicators of
+            openness to conversation, one participant (Interviewee Four)
+            suggested that the space itself should signal what type of
+            experience to expect, rather than individual indicators. This
+            reveals tension between wanting connection and wanting it to feel
+            natural rather than forced.
+          </p>
+        </div>
+
+        <div class="finding">
+          <h3>5. Time and Context Shape the Experience</h3>
+          <p>
+            The cafe's atmosphere varies significantly based on time of day and
+            day of week. Weekends and Fridays trend more social, while weekdays
+            lean toward focused work. Users strategically plan visits around
+            these patterns.
+          </p>
+
+          <div class="quote">
+            "I would say, less with the times that I've noticed, more with the
+            days of the week, that it's different... if it's on a weekend or a
+            Friday... people are chatting, hanging out... but other times of the
+            week, it's more of focusing"
+            <cite>— Interviewee Two</cite>
+          </div>
+
+          <div class="quote">
+            "It depends on the type of work that I'm doing... if I'm ever going
+            there to do work, it's specifically work that it's okay if I don't
+            really finish"
+            <cite>— Interviewee Two</cite>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights">
+        <h2>Design Insights</h2>
+
+        <h3>What I Initially Assumed</h3>
+        <p>
+          I thought Farmers Horse's main challenge was balancing work and social
+          atmospheres equally—that there might be tension between people who
+          wanted quiet focus and those who wanted to socialize.
+        </p>
+
+        <h3>What I Actually Discovered</h3>
+        <ul>
+          <li>
+            <strong
+              >Physical constraints matter more than atmospheric ones:</strong
+            >
+            Seating availability, line length, and comfort issues are bigger
+            barriers to returning than noise or social dynamics.
+          </li>
+          <li>
+            <strong
+              >The "lived-in" aesthetic creates community feeling without direct
+              interaction:</strong
+            >
+            People feel connected through shared space and history, not
+            necessarily through conversation.
+          </li>
+          <li>
+            <strong>Context is everything:</strong> Users self-select visit
+            times based on their needs, and the space naturally adapts to
+            accommodate different purposes at different times.
+          </li>
+          <li>
+            <strong>Parallel play is a feature, not a bug:</strong> Working
+            alongside others provides motivation and accountability without the
+            pressure of socializing.
+          </li>
+        </ul>
+
+        <h3>Revised "How Might We" Questions</h3>
+        <p>
+          Based on these findings, I've refined my research questions to focus
+          on:
+        </p>
+        <ul>
+          <li>
+            Helping new visitors understand what to expect before their first
+            visit
+          </li>
+          <li>
+            Preserving the spontaneous, exploratory feeling while providing
+            useful logistical information
+          </li>
+          <li>
+            Helping users transition between work mode and social mode within
+            the same visit
+          </li>
+          <li>
+            Surfacing the "parallel play" motivation that makes shared
+            workspaces productive
+          </li>
+        </ul>
+      </section>
+
+      <section id="next-steps">
+        <h2>Next Steps</h2>
+        <p>
+          With research complete and insights synthesized, the next phase
+          involves:
+        </p>
+        <ul>
+          <li>
+            Sketching initial app concepts that address the refined "How Might
+            We" questions
+          </li>
+          <li>Creating low-fidelity prototypes for three distinct app ideas</li>
+          <li>Testing concepts with target users to validate assumptions</li>
+          <li>Iterating based on feedback</li>
+          <li>
+            Developing a high-fidelity prototype of the most promising concept
+          </li>
+        </ul>
+
+        <p>
+          <em
+            >Stay tuned for updates as this project evolves! The working title
+            "NEIGHbor" may change as the concept develops.</em
+          >
+        </p>
+      </section>
+
+      <a href="/" class="back-link">← Back to Portfolio</a>
+    </div>
+  </body>
+</html>
