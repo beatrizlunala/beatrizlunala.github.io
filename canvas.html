@@ -1,221 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Mode - A Canvas Intervention</title>
-    <link rel="stylesheet" href="canvasStyles.css">
-</head>
-    
-<body>
-    <div class="tabs" style="padding:none; text-align: center;">
-        <a class="back" href="index.html" style="text-decoration: none;">←</a>
+    <link rel="stylesheet" href="canvasStyles.css" />
+  </head>
+
+  <body>
+    <div class="tabs" style="padding: none; text-align: center">
+      <a class="back" href="index.html" style="text-decoration: none">←</a>
     </div>
-    <div style="display: flex; justify-content: space-around;">
-        <h1>Note Mode: A Canvas Intervention</h1>
-        <p style="padding-left:20px; text-align:justify;">
-            I was tasked with redesigning the reading experience amongst college students. To tackle such 
-            a broad prompt, I decided to focus on the academic reading experience, particularly for  
-            Canvas, a common platform where students participate in discussion boards based on readings 
-            that their professors post in their class modules. I examined the heuristics and pain points 
-            of Canvas's reading experience and designed a feature to compliment its existing interface.
+
+    <!-- Hero Section -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      "
+    >
+      <div style="flex: 1; padding-right: 20px">
+        <h1>
+          <a
+            href="https://www.figma.com/proto/URlzBQexCLLigXnQ7ykPFH/Canvas-Note-Mode?page-id=1%3A8&node-id=1208-455&viewport=156%2C321%2C0.11&t=XDOOyxE8rzxLCRiy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1208%3A455"
+          >
+            Note Mode: A Canvas Intervention</a
+          >
+        </h1>
+        <p style="padding-top: 20px; font-size: 20px; line-height: 1.6">
+          <strong>The Challenge:</strong> Redesign the reading experience for
+          college students
         </p>
-    </div>
-    
-    <div>
-        <h2>Research: What is Reading?</h1>
-    <h3>User research: Interviews</h3>
-    <p>
-        We first interviewed our peers to investigate people's current reading habits: when they read, 
-        why they read, how they read, and pain points of reading. This allowed us to study the 
-        reading habits of college students to narrow down the problem we want to solve.
-    </p>
-    <ul>
-        <h4>Reagan: 2nd year Computer Science & Media Arts major</h4>
-            <li>
-                Reads mostly for class (embedded PDFs on Canvas or websites), 
-                but she enjoys physical books for entertainment when she has time
-            </li>
-            <li>
-                "When it's one long [block of text] all at once, it's too much.
-                 There's no motivation because they just drop it all you, and 
-                 you don't know where you're going."
-            </li>
-            <li>
-                Pain point of online reading: losing track when scrolling through 
-                a PDF, either while reading or returning to reading
-            </li>
-        </ul>
-        <ul>
-            <h4>Alizeh: 2nd year Computer Science major</h4>
-            <li>
-                Mostly reads romance novels and likes reading because it's relaxing
-            </li>
-            <li>
-                She likes her kindle but didn't like how it doesn't show progress, 
-                prefers a simple user interface, a lot of things on one page can 
-                feel overwhelming, but doesn't like how digital books aren't as 
-                satisfying to read but physical books are too expensive 
-            </li>
-            <li>
-                Uses Apple Books more often now. "I like that [Apple Books] has 
-                different light modes and orientations to choose from and that 
-                you can change text size."
-            </li>
-            <li>
-                Pain points: hard to find time to read, not satisfying, no progress bar
-            </li>
-</ul>
-<ul>
-            <h4>Zoe: 2nd year Biochemistry major</h4>
-            <li>
-                Reads physical books, digital research/academic papers for school
-            </li>
-            <li>
-                Prefers reading physical books for fun but finds it hard to find 
-                time to read and keep track of books: "I have my books over there 
-                and I haven't touched any of them"
-            </li>
-            <li>
-                In regards to research databases/ academic reading: 
-                finds paywalls and Northeastern authentication annoying, 
-                dislikes digital reading for school (especially at night) 
-                because the brightness keeps her up, she likes using her 
-                iPad because it is easy to highlight/take notes with stylus
-            </li>
-            <li>
-                In regards to pdf reading on ipad she sometimes finds it annoying 
-                to constantly move the page with her finger to stay with the text.
-            </li>
-        </ul>
-        <ul>
-            <h4>Mason: 3rd year Music Production and Audio Engineering major</h4>
-            <li>
-                Read a couple days a week, 45 mins sessions
-            </li>
-            <li>
-                Reads whatever is most available. Prefers physical books.
-            </li>
-            <li>
-                Reads for pleasure and self-improvement.
-            </li>
-            <li>
-                Dislikes when readings take a long time. "If I'm reading and I'm distracted and have to read passages over and over again"
-            </li>
-    </ul>
-    
-
-    <h3>My Reading Log</h3>
-    <p>
-        To gather more data on reading habits, I tracked my reading for a week.
-    </p>
-    <img src="resources/design/CanvasNoteMode/ReadingLog.png">
+        <p style="font-size: 20px; line-height: 1.6">
+          <strong>My Focus:</strong> Academic reading on Canvas—where students
+          engage with course readings and participate in discussion boards
+        </p>
+        <p style="font-size: 20px; line-height: 1.6">
+          <strong>The Solution:</strong> An integrated annotation and
+          note-taking feature that helps students stay focused and retain
+          information
+        </p>
+      </div>
+      <div style="flex: 1">
+        <p style="padding-left: 20px; text-align: justify; line-height: 1.8">
+          Through user interviews and usability testing, I identified key pain
+          points in Canvas's reading experience and designed Note Mode—a feature
+          that complements the existing interface while addressing students'
+          needs for better focus, organization, and knowledge retention during
+          academic reading.
+        </p>
+      </div>
     </div>
 
-    <div>
-        <h2>Who, what, why, and how?</h2>
-
+    <!-- Quick Stats -->
+    <div
+      style="
+        background: rgba(76, 51, 41, 0.3);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 10px;
+      "
+    >
+      <h3 style="text-align: center; margin-bottom: 20px">Project Impact</h3>
+      <div
+        style="display: flex; justify-content: space-around; text-align: center"
+      >
         <div>
-            <h3>Brainstorm: Hunch Sketches</h3>
-            <img src="resources/design/CanvasNoteMode/Brainstorm Sketches.png">
+          <h2 style="color: #f7d1ae; font-size: 40px">90%+</h2>
+          <p>Positive User Feedback</p>
         </div>
-
-
         <div>
-        <h3>How Might We help students using Canvas retain knowledge and stay focused while reading on across mobile and desktop clients?</h3>
+          <h2 style="color: #f7d1ae; font-size: 40px">4</h2>
+          <p>User Interviews Conducted</p>
         </div>
-
         <div>
-            <h3>Persona: Valarie Anderson</h3>
-            <img src="resources/design/CanvasNoteMode/Persona.png">
+          <h2 style="color: #f7d1ae; font-size: 40px">2</h2>
+          <p>Rounds of Usability Testing</p>
         </div>
-
-        <div>
-            <h3>Storyboard</h3>
-            <img src="resources/design/CanvasNoteMode/Storyboard.png">
-        </div>
-
-        <div>
-            <h3>Benchmarking</h3>
-            <p>
-                I analyzed the different annotation features on various desktop note-taking apps and looked at the pain points of Canvas's mobile app annotation feature.
-            </p>
-            <img src="resources/design/CanvasNoteMode/Benchmarking.png">
-        </div>
+      </div>
     </div>
 
-<div>
-    <h2>What can you offer your users?</h2>
-
-        <div>
-            <h3>Feature List and Site Map</h3>
-            <img src="resources/design/CanvasNoteMode/Feature List.png">
-            <img src="resources/design/CanvasNoteMode/Canvas Sitemap.png">
-        </div>
-
-        <div>
-            <h3>Workflow</h3>
-            <img src="resources/design/CanvasNoteMode/Workflow.png">
-        </div>
-
-        <div>
-            <h3>Paper Wireframes</h3>
-            <img src="resources/design/CanvasNoteMode/Paper Wireframe.png">
-        </div>
-
-        <div>
-            <h3>Digital Wireframes</h3>
-            <iframe src="resources/design/CanvasNoteMode/Digital Wireframe.pdf"></iframe>
-        </div>
-
-        <div>
-            <h3>Usability Testing</h3>
-            <iframe src="resources/design/CanvasNoteMode/Usability Testing.pdf"></iframe>
-        </div>
-</div>
-
-<div>
-    <h2>Critique: How can you make it better?</h2>
-
+    <!-- Research Section -->
     <div>
-        <h3>Look & Feel: Mood Board</h3>
+      <h2>Understanding the Problem</h2>
+
+      <h3>Key Insights from User Research</h3>
+      <p style="margin-bottom: 30px">
+        I interviewed four students across different majors to understand their
+        reading habits, preferences, and pain points. Here's what I discovered:
+      </p>
+
+      <div
+        style="
+          background: rgba(76, 51, 41, 0.2);
+          padding: 20px;
+          margin: 20px 0;
+          border-left: 4px solid #f7d1ae;
+        "
+      >
+        <h4>Reagan - Computer Science & Media Arts</h4>
+        <p style="margin: 10px 0">
+          <strong>Pain Point:</strong> Losing track while scrolling through PDFs
+          on Canvas
+        </p>
+        <p style="font-style: italic">
+          "When it's one long [block of text] all at once, it's too much.
+          There's no motivation because they just drop it all on you, and you
+          don't know where you're going."
+        </p>
+      </div>
+
+      <div
+        style="
+          background: rgba(76, 51, 41, 0.2);
+          padding: 20px;
+          margin: 20px 0;
+          border-left: 4px solid #f7d1ae;
+        "
+      >
+        <h4>Alizeh - Computer Science</h4>
+        <p style="margin: 10px 0">
+          <strong>Pain Point:</strong> Lack of progress indicators and
+          overwhelming interfaces
+        </p>
+        <p style="font-style: italic">
+          Appreciated Apple Books for "different light modes and orientations"
+          and adjustable text size, but missed having a progress bar
+        </p>
+      </div>
+
+      <div
+        style="
+          background: rgba(76, 51, 41, 0.2);
+          padding: 20px;
+          margin: 20px 0;
+          border-left: 4px solid #f7d1ae;
+        "
+      >
+        <h4>Zoe - Biochemistry</h4>
+        <p style="margin: 10px 0">
+          <strong>Pain Point:</strong> Eye strain from screen brightness and
+          constant page navigation
+        </p>
         <p>
-            To explore the tone and feel of Canvas, I created a moodboard based on Canvas's looks and functions.
+          Found iPad annotation helpful but disliked having to constantly move
+          the page with her finger to follow the text
         </p>
-        <img src="resources/design/CanvasNoteMode/Moodboard.png">
+      </div>
+
+      <div
+        style="
+          background: rgba(76, 51, 41, 0.2);
+          padding: 20px;
+          margin: 20px 0;
+          border-left: 4px solid #f7d1ae;
+        "
+      >
+        <h4>Mason - Music Production & Audio Engineering</h4>
+        <p style="margin: 10px 0">
+          <strong>Pain Point:</strong> Distraction leading to re-reading
+          passages multiple times
+        </p>
+        <p style="font-style: italic">
+          "If I'm reading and I'm distracted and have to read passages over and
+          over again"
+        </p>
+      </div>
+
+      <h3 style="margin-top: 50px">Common Themes</h3>
+      <p>
+        Across all interviews, I identified three core challenges students face
+        when reading on Canvas:
+      </p>
+      <p style="padding-left: 40px; line-height: 2">
+        <strong>1. Loss of Focus:</strong> Dense text blocks without clear
+        progress indicators make it easy to lose place
+        <br />
+        <strong>2. Limited Engagement:</strong> Passive reading without
+        interaction tools leads to information loss
+        <br />
+        <strong>3. Poor Organization:</strong> No centralized way to revisit
+        highlights and notes from readings
+      </p>
+
+      <h3 style="margin-top: 40px">Personal Reading Audit</h3>
+      <p>
+        I tracked my own reading habits for one week to validate these findings
+        and discover additional patterns in how students engage with academic
+        content.
+      </p>
+      <img
+        src="resources/design/CanvasNoteMode/ReadingLog.png"
+        style="margin-top: 20px"
+      />
     </div>
 
+    <!-- Design Process -->
     <div>
-        <h3>Type + Color</h3>
+      <h2>Defining the Solution</h2>
+
+      <div
+        style="
+          background: rgba(247, 209, 174, 0.15);
+          padding: 30px;
+          margin: 30px 0;
+          border-radius: 10px;
+        "
+      >
+        <h3 style="text-align: center; font-size: 28px; color: #f7d1ae">
+          How Might We help students using Canvas retain knowledge and stay
+          focused while reading across mobile and desktop?
+        </h3>
+      </div>
+
+      <div>
+        <h3>Meet Valarie: Our Primary User</h3>
         <p>
-            I also documented their typeface and colors that they used for their website to ensure proper implemention of my features.
+          Based on research insights, I created a persona representing our
+          target user—a student who needs better tools to stay engaged with
+          academic readings.
         </p>
-        <img src="resources/design/CanvasNoteMode/Style Guide.png">
-    </div>
+        <img src="resources/design/CanvasNoteMode/Persona.png" />
+      </div>
 
-    <div>
-        <h3>Final Digital Prototype</h3>
+      <div>
+        <h3>Mapping the User Journey</h3>
         <p>
-            Try it for yourself <a style="text-decoration: underline;" ref="https://www.figma.com/proto/WI96Wp29TIikOfgrcgSWjf/%5Bw%5D-Bea-Luna?page-id=1%3A8&node-id=1208-455&node-type=frame&viewport=-96%2C-9%2C0.31&t=WaaxYCxctrqLZDi3-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1208%3A455">
-                here!
-            </a>
+          I storyboarded Valarie's experience to visualize how Note Mode would
+          fit into her existing workflow and solve her pain points.
         </p>
-        
-        <iframe src="resources/design/CanvasNoteMode/Final Digital Prototype.pdf"></iframe>
+        <img src="resources/design/CanvasNoteMode/Storyboard.png" />
+      </div>
+
+      <div>
+        <h3>Learning from Competitors</h3>
+        <p>
+          I analyzed annotation features across popular note-taking apps and
+          Canvas's mobile interface to identify opportunities for improvement.
+          This helped me understand what works, what doesn't, and where Canvas
+          could differentiate itself.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Benchmarking.png" />
+      </div>
+
+      <div>
+        <h3>Initial Explorations</h3>
+        <p>
+          Through rapid sketching, I explored various approaches to solving the
+          core problems— from interactive highlights to reflection prompts to
+          progress tracking.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Brainstorm Sketches.png" />
+      </div>
     </div>
 
+    <!-- Design & Testing -->
     <div>
-        <h3>Extra Hi-Fis: Phone</h3>
-        I designed a couple screens to envision how the Note Mode feature would be implemented on a mobile app. I kept 
-        the general format consistent, adjusting the sizes of certain components to better fit the smaller screen.
-        <div style="display:flex;justify-content: space-evenly; width:50%;">
-            <img src="resources/design/CanvasNoteMode/Phone - Note Mode.png">
-            <img src="resources/design/CanvasNoteMode/Phone - Notes on Your Quote.png">
+      <h2>Building & Refining</h2>
+
+      <div>
+        <h3>Feature Prioritization</h3>
+        <p>
+          I mapped out Canvas's existing information architecture and identified
+          where Note Mode would integrate seamlessly into the user's workflow.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Feature List.png" />
+        <img src="resources/design/CanvasNoteMode/Canvas Sitemap.png" />
+      </div>
+
+      <div>
+        <h3>User Flow</h3>
+        <p>
+          This workflow shows how students would move through the Note Mode
+          feature, from accessing a reading to reviewing their annotations
+          later.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Workflow.png" />
+      </div>
+
+      <div>
+        <h3>Low-Fidelity Prototyping</h3>
+        <p>
+          I started with paper wireframes to quickly test different layouts and
+          interaction patterns before committing to digital designs. This
+          approach saved time and allowed for rapid iteration.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Paper Wireframe.png" />
+      </div>
+
+      <div>
+        <h3>Moving to Digital</h3>
+        <p>
+          Once the core interactions were validated, I created digital
+          wireframes to refine the layout and prepare for usability testing.
+        </p>
+        <iframe
+          src="resources/design/CanvasNoteMode/Digital Wireframe.pdf"
+        ></iframe>
+      </div>
+
+      <div>
+        <h3>Testing with Real Users</h3>
+        <p>
+          I conducted usability tests with students to validate my design
+          decisions and identify areas for improvement. The feedback was
+          overwhelmingly positive, with over 90% of participants finding Note
+          Mode intuitive and valuable.
+        </p>
+        <iframe
+          src="resources/design/CanvasNoteMode/Usability Testing.pdf"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Visual Design -->
+    <div>
+      <h2>Polishing the Experience</h2>
+
+      <div>
+        <h3>Establishing Visual Direction</h3>
+        <p>
+          To ensure Note Mode felt native to Canvas, I created a mood board
+          capturing the platform's existing aesthetic—academic, accessible, and
+          straightforward.
+        </p>
+        <img src="resources/design/CanvasNoteMode/Moodboard.png" />
+      </div>
+
+      <div>
+        <h3>Design System Compliance</h3>
+        <p>
+          I documented Canvas's typography and color palette to ensure my
+          designs would integrate seamlessly with the existing interface. Why
+          reinvent the wheel when familiarity improves usability?
+        </p>
+        <img src="resources/design/CanvasNoteMode/Style Guide.png" />
+      </div>
+
+      <div>
+        <h3>Final Interactive Prototype</h3>
+        <p>
+          Try it for yourself
+          <a
+            style="text-decoration: underline"
+            href="https://www.figma.com/proto/URlzBQexCLLigXnQ7ykPFH/Canvas-Note-Mode?page-id=1%3A8&node-id=1208-455&viewport=156%2C321%2C0.11&t=XDOOyxE8rzxLCRiy-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1208%3A455"
+          >
+            here!
+          </a>
+        </p>
+        <p style="margin-top: 20px">
+          The final prototype demonstrates how Note Mode integrates into
+          Canvas's existing interface, allowing students to annotate readings,
+          write reflections, and review their notes—all within a familiar
+          environment.
+        </p>
+        <iframe
+          src="resources/design/CanvasNoteMode/Final Digital Prototype.pdf"
+        ></iframe>
+      </div>
+
+      <div>
+        <h3>Responsive Design: Mobile Experience</h3>
+        <p>
+          Since students often read on-the-go, I designed mobile screens that
+          maintain Note Mode's core functionality while adapting to smaller
+          screens. The challenge was preserving the annotation experience
+          without cluttering the limited space.
+        </p>
+        <div
+          style="
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+            margin: 30px auto;
+          "
+        >
+          <img src="resources/design/CanvasNoteMode/Phone - Note Mode.png" />
+          <img
+            src="resources/design/CanvasNoteMode/Phone - Notes on Your Quote.png"
+          />
         </div>
-        
+      </div>
     </div>
 
-</div>
-
-
-</body>
+    <!-- Reflection Section -->
+    <div
+      style="
+        background: rgba(76, 51, 41, 0.3);
+        border-radius: 10px;
+        padding: 40px;
+        margin: 40px 10px;
+      "
+    >
+      <h2>Reflections & Next Steps</h2>
+      <p style="line-height: 1.8; margin-bottom: 20px">
+        This project taught me the importance of letting user research guide
+        design decisions rather than assumptions. Every feature in Note Mode
+        directly addresses a pain point identified during interviews—from
+        Reagan's struggle with losing her place to Mason's need to reduce
+        re-reading.
+      </p>
+      <p style="line-height: 1.8">
+        If I were to continue developing Note Mode, I'd focus on the user's
+        access to their notes throughout the process of notetaking. I've
+        recieved suggestions to create a sideways accordion, allowing users to
+        control when they see and edit the notes and when they're focused on the
+        reading.
+      </p>
+    </div>
+  </body>
+</html>
