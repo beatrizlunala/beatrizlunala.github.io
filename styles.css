@@ -125,10 +125,13 @@ img {
 }
 
 .profile-pic {
-  width: clamp(120px, 30vw, 200px);
+  width: 100%;
+  max-width: clamp(300px, 50vw, 600px);
+  aspect-ratio: 5 / 3;
   border-radius: 15%;
   margin: 1rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
 }
 
 .intro a {
