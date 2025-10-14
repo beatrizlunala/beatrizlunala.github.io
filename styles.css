@@ -126,7 +126,7 @@ img {
 
 .profile-pic {
   width: 100%;
-  max-width: clamp(300px, 50vw, 600px);
+  max-width: clamp(50%, 60vw, 600px);
   aspect-ratio: 5 / 3;
   border-radius: 15%;
   margin: 1rem 0;
@@ -311,7 +311,7 @@ img {
   background: rgba(218, 164, 80, 0.1);
   padding: 1.5rem;
   border-radius: 8px;
-  margin: 2rem auto;
-  max-width: 800px;
+  margin: 3rem auto;
+  max-width: 90%;
   border-left: 4px solid #dea450;
 }
