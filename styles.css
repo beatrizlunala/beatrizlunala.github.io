@@ -147,24 +147,72 @@ img {
 }
 
 /* Project Sections */
+/* Project Grid Layout */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Make the intro section for "PROJECTS" span full width */
+.projects > div:first-child,
+.projects > h2:first-child {
+  grid-column: 1 / -1;
+}
+
+/* Individual Project Cards */
 .project {
-  padding: 1.5rem;
-  margin: 1rem 0;
-  text-align: left;
+  color: #3f292b;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #3f292b;
   border-radius: 8px;
-  background: rgba(106, 74, 60, 0.1);
-  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  background: #e7ddd7;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Images */
+.project img {
+  width: 100%;
+  object-fit: scale-down;
+  display: block;
+}
+
+/* Project Content */
+.project h3 {
+  margin: 0;
+}
+
+.project h3 a {
+  display: block;
 }
 
 .project p {
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  padding: 1rem;
+  margin: 0;
+  flex-grow: 1;
 }
 
-.project img {
-  margin: 1rem 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Skills Lists */
@@ -244,17 +292,6 @@ img {
   width: 100%;
 }
 
-/* Responsive Typography and Spacing */
-.projects {
-  margin: 2rem 0;
-}
-
-.projects p {
-  font-size: 0.95rem;
-  color: #dea450;
-  margin-bottom: 2rem;
-}
-
 /* Media Queries */
 @media (min-width: 768px) {
   body {
@@ -268,11 +305,6 @@ img {
 
   .active[data-tab-content] {
     padding: 2rem;
-  }
-
-  .project {
-    padding: 2rem;
-    margin: 2rem 0;
   }
 
   .row {
@@ -295,10 +327,6 @@ img {
 
   .active[data-tab-content] {
     padding: 3rem;
-  }
-
-  .project {
-    padding: 2.5rem;
   }
 
   #gallery {
