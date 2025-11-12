@@ -150,15 +150,9 @@ img {
 /* Project Grid Layout */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 2rem;
   padding: 1rem 0;
-}
-
-/* Make the intro section for "PROJECTS" span full width */
-.projects > div:first-child,
-.projects > h2:first-child {
-  grid-column: 1 / -1;
 }
 
 /* Individual Project Cards */
@@ -170,7 +164,6 @@ img {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
   background: #e7ddd7;
 }
 
