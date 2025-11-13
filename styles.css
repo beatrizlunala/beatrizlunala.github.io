@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 1rem;
   font-family: Average, serif;
-  background: linear-gradient(#3f292b 0%, #563526 100%);
+  background: linear-gradient(#563526 0%, #3f292b 100%);
   color: #dea450;
   font-size: 1.125rem;
   text-align: center;
@@ -163,14 +163,14 @@ img {
 
 /* Individual Project Cards */
 .project {
-  color: #3f292b;
+  color: #e7ddd7;
   display: flex;
   flex-direction: column;
   border: 1px solid #3f292b;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background: #e7ddd7;
+  background: #3f292b;
 }
 
 .project:hover {
