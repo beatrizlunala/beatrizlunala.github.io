@@ -148,7 +148,8 @@ img {
 }
 
 .intro a:hover {
-  background-color: rgba(106, 74, 60, 0.3);
+  color: #f7d1ae;
+  background: #563526;
 }
 
 /* Project Sections */
@@ -229,7 +230,8 @@ img {
   text-align: center;
 }
 
-.skill-category ul {
+.skill-category ul,
+li {
   list-style: none;
   padding: 1rem;
   background: rgba(106, 74, 60, 0.1);
