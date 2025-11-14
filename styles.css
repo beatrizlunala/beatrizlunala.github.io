@@ -84,11 +84,13 @@ img {
   list-style-type: none;
   padding: 0.75rem 0;
   margin: 0;
+  background-color: #3f292b;
 }
 
 .navbar li {
   flex: 1;
   text-align: center;
+  background-color: #3f292b;
 }
 
 .navbar a {
@@ -175,7 +177,7 @@ img {
 
 .project:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px #f7d1ae;
 }
 
 /* Project Images */
@@ -246,34 +248,23 @@ li {
 /* Gallery */
 #gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
   padding: 1rem 0;
 }
 
 #gallery figure {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background: rgba(106, 74, 60, 0.1);
   border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-#gallery figure:hover {
-  transform: translateY(-4px);
+  padding: 0 2rem;
 }
 
 #gallery img {
-  width: 100%;
-  height: auto;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s ease;
-}
-
-#gallery figure:hover img {
-  opacity: 0.8;
 }
 
 #gallery figcaption {
@@ -314,10 +305,6 @@ li {
   .skills-container {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  #gallery {
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  }
 }
 
 @media (min-width: 1024px) {
@@ -327,11 +314,6 @@ li {
 
   .active[data-tab-content] {
     padding: 3rem;
-  }
-
-  #gallery {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
   }
 }
 
