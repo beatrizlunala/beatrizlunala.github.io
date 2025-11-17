@@ -9,7 +9,7 @@
 
 body {
   cursor: url(resources/cursors/coffeeNormal.png), auto;
-  margin: 0;
+  margin: 10%;
   padding: 1rem;
   font-family: Average, serif;
   background: linear-gradient(#563526 0%, #3f292b 100%);
@@ -56,8 +56,11 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .status-tag {
   display: inline-block;
