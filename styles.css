@@ -109,6 +109,20 @@ img {
   background: #563526;
 }
 
+#logo {
+  flex: auto;
+  align-items: left;
+}
+#logo a {
+  background: none;
+  padding: 0;
+}
+#logo a:hover {
+  background: none;
+  padding: 0;
+  cursor: url(resources/cursors/coffeeSteaming.png), auto;
+}
+
 /* Main Content */
 .tab-content {
   margin-top: 80px;
