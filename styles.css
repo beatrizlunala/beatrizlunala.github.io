@@ -330,12 +330,3 @@ li {
     padding: 3rem;
   }
 }
-
-.corruption-notice {
-  background: rgba(218, 164, 80, 0.1);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin: 3rem auto;
-  max-width: 90%;
-  border-left: 4px solid #dea450;
-}
