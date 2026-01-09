@@ -262,7 +262,7 @@ li {
 /* Gallery */
 #gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   padding: 1rem 0;
 }
@@ -277,8 +277,6 @@ li {
 
 #gallery img {
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease;
 }
 
 #gallery figcaption {
